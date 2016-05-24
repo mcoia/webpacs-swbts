@@ -1252,7 +1252,9 @@ a.iconText.external {padding-right:20px;}
 #copyright img {vertical-align:bottom; padding-bottom:1px;}
 
 .mainSearch #search {
-  margin: 20px auto;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid lightgray;
 }
 
 /*<!-- Hide WebPAC searchtools in favor of an Encore search -->*/
