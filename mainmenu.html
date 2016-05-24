@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- Updated: May 26th 2011 -->
+<head>
+<title>SIERRA WebPAC</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<!--<link rel="stylesheet" type="text/css" href="/screens/stylesmain.css" > Un-comment to offer a larger logo on mainmenu.-->
+<script type="text/javascript">/* <![CDATA[ */
+function iiiSearchValidate() {
+	try{
+	  if (document.getElementById('search').searcharg.value==null||document.getElementById('search').searcharg.value=="") {
+		return false;
+		}
+	}
+	catch(err) {
+	}
+  return true;
+}
+
+function iiiDoSubmit_1()
+{
+//getFormHandleForm() is in common.js
+var obj = getFormHandleForm(1);
+if(iiiSearchValidate()){
+obj.submit();
+}
+}
+/* ]]> */
+</script>
+</head>
+<body>
+<!--{toplogo}-->
+
+<div class="pageContentInner mainSearch">
+
+<h1 class="accessibleAddInfo">Search</h1>
+
+<div id="accessibleForm" class="form1Part">
+<div class="browseSearchtool">
+<form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
+
+
+<input type="hidden" id="iiiFormHandle_1">
+
+<!-- Optional legend:
+<fieldset>
+<legend>Type the search term you want to find.</legend>-->
+<div class="formEntryArea">
+<label for="searchtype" class="accessibleAddInfo">Search type</label>
+<select name="searchtype" id="searchtype">
+<option value="X" selected="selected">Keyword</option>
+<option value="t">Title</option>
+<option value="s">Journal Title</option>
+<option value="a">Author</option>
+<option value="d">Subject</option>
+<option value="y">Resource Name</option>
+</select>
+<!--{nosort}-->
+<label for="searcharg" class="accessibleAddInfo">Search term</label>
+<input maxlength="75" name="searcharg" size="20" >
+<label for="scope" class="accessibleAddInfo">Location</label>
+<!--{scope}-->
+<span class="nowrap formButtonArea">
+
+  <!--{submit}-->
+
+<input type="hidden" id="iiiFormHandle_1"/>
+<a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
+
+<input type="submit" class="submitHidden">
+
+</span>
+</div><!-- formEntryArea -->
+<!--</fieldset> optional-->
+</form>
+</div><!-- browseSearchtool -->
+</div><!-- form1Part -->
+
+<!-- Insert page content here or activate default links as needed. -->
+<!-- 
+<div class="mainMenuContent">
+<div class="navigationRow">
+<ul>
+<li><a href="/patroninfo"><span class="button"><img src="/screens/ico_patron.gif" alt=""><span class="buttonText">My Account</span></span></a></li>
+<li><a href="/illb"><span class="button"><img src="/screens/ico_books.gif" alt=""><span class="buttonText">Interlibrary Loan</span></span></a></li>
+<li><a href="/acquire"><span class="button"><img src="/screens/ico_review.gif" alt=""><span class="buttonText">Suggest a Purchase</span></span></a></li>
+<li><a href="/search/X"><span class="button"><img src="/screens/ico_magnifyingglass.gif" alt=""><span class="buttonText">Index Search</span></span></a></li>
+</ul>
+</div>
+</div>
+-->
+<div style="clear:both"></div>
+
+</div><!--pageContentInner -->
+
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[1].searcharg.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>

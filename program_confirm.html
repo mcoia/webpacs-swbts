@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- Updated: 12 Apr 2010 -->
+<head>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
+
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<link rel="stylesheet" href="/screens/styles.css" type="text/css">
+<link rel="stylesheet" href="/screens/progreg_styles.css" type="text/css">
+</head>
+<body>
+<!-- begin toplogo_loggedin.html file -->
+<!-- Rel 2009B Example Set -->
+<!-- Updated: 06 Oct 2010 -->
+<div class="fullPage">
+
+<div id="skipNav"><a href="#content" tabindex="1">Skip to content</a></div>
+
+<div id="bannertop">
+<div id="bannerMenu">
+	<div class="contentCategories">
+			<span id="catalogChooserAnyComponent">
+					<span id="selectedCategory"><a href="/">Catalog</a></span>
+			</span>
+	</div>
+	<img src="/screens/carrot.png" id="carrotIndicator" style="left: 14.65px; top: 22px; "> <!--to enable, display: block;-->
+        <span class="myAccountInfo">
+            <!--login area-->
+<a href="/patroninfo">Return To Your Record</a>
+            <!--end login area-->
+ | <a href="/logout">Log Out</a>
+	</span>&nbsp;
+</div>
+</div>
+
+<div class="topNavClear"></div>
+
+<div class="pageContent"><!-- content container -->
+<a name="content" id="content"></a>
+
+
+<!--end toplogo_loggedin.html-->
+
+<div class="progContent"><!-- right container -->
+<div class="progNavrow">
+<!--{return}-->
+</div>
+<div class="progNavMessage">You are logged in as:
+<!--{patronname}-->
+</div>
+<!--{iferrmsg}-->
+<div class="errorMessageStatus">
+<br/>
+<!--{errmsg}-->
+</div>
+<!--{xif}-->
+<br/>
+<!--{else}-->
+<!--Begin the main content table-->
+<div class="progRegConf">Registration Confirmation</div>
+<div class="progName">
+<!--{progname}-->
+</div>
+<div class="progRegDescArea">
+<table cellspacing="0" cellpadding="0" class="progRegConfirm">
+<tr>
+<td colspan="2">
+<strong>
+<div>
+<!--{registeredstatuses}-->
+</div>
+<div>
+<!--{waitlistedstatuses}-->
+</div>
+</strong>
+</td>
+</tr>
+<tr><td class="progConfLabel">Description:</td>
+<td id="program_desc" class="value">
+<!--{progdesc}-->
+</td> 
+</tr>
+<tr><td class="progConfLabel">Instructor:</td>
+<td>
+<!--{instructor}-->
+</td>
+</tr>
+<!--{iffee}-->
+<tr><td class="progConfLabel">Price:</td>
+<td>
+<!--{price}-->
+</td>
+</tr>
+<!--{xif}-->
+<tr><td class="progConfLabel">Meets:</td>
+<td>
+<!--{sessionsummary}-->
+</td>
+</tr>
+<tr><td class="progConfLabel">Session(s):</td>
+<td>
+<!--{viewhidesessionlist}-->
+</td>
+</tr>
+<tr><td class="progConfLabel">Location:</td>
+<td>
+<!--{location}-->
+</td>
+</tr>
+<tr><td class="progConfLabel">Notes:</td>
+<td>
+<!--{publicnote}-->
+</td>
+</tr>
+</table>
+</div>
+<div id="program_thumbnail" class="progThumbnail">
+<!--{progthumbnail}-->
+</div>
+<div style="clear:both"></div>
+<!--End of main page content-->
+<!--{xif}-->
+<!--{botlogo}-->
+</body>
+</html>
