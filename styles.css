@@ -19,7 +19,7 @@ yellow hover color: #FFFFE4
 Gray for borders and borders serving as horizontal rules: #D3D3D3
 
 Font Size Quick Reference
-(Default browser font size) * Body Font Size = Default Display Size 
+(Default browser font size) * Body Font Size = Default Display Size
 16pt * .85 = 13.6pt
 Find your desired size in ems by dividing your desired font-size in points by the present size of the font.
 For instance, 12pt font = 12/13.6 = .8824em.
@@ -675,7 +675,7 @@ div .bibResourceSidebar { display:none; }
 
 .mainMenuContentRight li { margin:0px 0px 15px 0px; }
 
-.mainSearch { text-align:center; }
+/*.mainSearch { text-align:center; }*/
 
 .mainSearch .form1Part { float:none; margin-top:36px; text-align:center; }
 
@@ -699,7 +699,7 @@ div .bibResourceSidebar { display:none; }
 
 .navigationRow, .navigationRowRecord { clear:both; text-align:center; }
 
-.navigationRow > form, .navigationRowNoForm { margin-top:5px; margin-bottom:0; } 
+.navigationRow > form, .navigationRowNoForm { margin-top:5px; margin-bottom:0; }
 
 .navigationRow noscript h2, .bibSearchHistory noscript h2 { font-size:1.0625em; margin:-3px 10px 0 0; color:#FF0000; }
 
@@ -707,7 +707,7 @@ div .bibResourceSidebar { display:none; }
 
 .navigationRow select { font-size:.885em; }
 
-.pageContent { clear:both; margin-top:90px; }
+.pageContent { clear:both; margin-top:20px; }
 
 .pageContent > br { display:none; }
 
@@ -731,7 +731,7 @@ div .bibResourceSidebar { display:none; }
 
 #patActionsLinksList { margin:0 10px 0 0; padding:0px; font-size:1.0625em; }
 
-/* Override ProStyles.css styles applied to pat divs */ 
+/* Override ProStyles.css styles applied to pat divs */
 .patActionsLinks,.patNameAddress,.patHelp,.patLeft,.patFuncArea  { border:0; clear:none; margin:0; padding:0; text-align:left; float:none; width:auto; }
 
 .patActionsLinks  { float:left; background:#FFFFFF; display:inline; margin:0px 0px 20px 20px; padding:10px 0 5px; width:21.33em; }
@@ -999,27 +999,27 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 /*Toplogo optional dropdown menus*/
 
 /*#toplogoMoreNav { list-style: none; padding: 0; margin: 0; float:left; border:2px solid pink; } */
-#toplogoMoreNav { list-style: none; padding: 0; margin: 0; } 
+#toplogoMoreNav { list-style: none; padding: 0; margin: 0; }
 
-#toplogoMoreNav a { text-decoration: none; } 
+#toplogoMoreNav a { text-decoration: none; }
 
-#toplogoMoreNav li li a { display: block; font-weight: normal; padding: 0 10px 3px; } 
+#toplogoMoreNav li li a { display: block; font-weight: normal; padding: 0 10px 3px; }
 
-#toplogoMoreNav li li a:hover { text-decoration:underline; } 
+#toplogoMoreNav li li a:hover { text-decoration:underline; }
 
-#toplogoMoreNav li { cursor: default; background-color: white; margin-right:1em; margin-top:5px; float:left; padding:0; } 
+#toplogoMoreNav li { cursor: default; background-color: white; margin-right:1em; margin-top:5px; float:left; padding:0; }
 
-#toplogoMoreNav li#first { } 
+#toplogoMoreNav li#first { }
 
-#toplogoMoreNav li#last { } 
+#toplogoMoreNav li#last { }
 
-#toplogoMoreNav li ul { position: absolute; visibility:hidden; font-weight: normal; padding: 0.5em 0 1em 0; border: solid 1px #D3D3D3; border-top:none; background:#FFFFFF; white-space:nowrap; z-index:99; } 
+#toplogoMoreNav li ul { position: absolute; visibility:hidden; font-weight: normal; padding: 0.5em 0 1em 0; border: solid 1px #D3D3D3; border-top:none; background:#FFFFFF; white-space:nowrap; z-index:99; }
 
-#toplogoMoreNav li>ul { top: auto; left: auto; } 
+#toplogoMoreNav li>ul { top: auto; left: auto; }
 
 #toplogoMoreNav li li { display: block; float: none; background-color: transparent; border:0; border-bottom:1px solid white; }
 
-#toplogoMoreNav li ul li { margin:0; } 
+#toplogoMoreNav li ul li { margin:0; }
 
 #toplogoMoreNav li:hover ul, #toplogoMoreNav li.over ul { visibility:visible; display:block; }
 
@@ -1188,7 +1188,7 @@ tr.highlight { background:#FFFFE4; }
 
 .myEncoreHomeLink { background:url(encore.png) top left; background-repeat:no-repeat; width:127px; height:30px; text-decoration: none; display:block; }
 
-.pageContent { margin-top:90px; } //Top margin should be 90px or height of myEncoreHomeLink +10, whichever is greater.
+/*.pageContent { margin-top:90px; } */ //Top margin should be 90px or height of myEncoreHomeLink +10, whichever is greater.
 
 /*Big footer*/
 .fullPage { min-height:100%; margin-bottom:-19em; }
@@ -1196,12 +1196,12 @@ tr.highlight { background:#FFFFE4; }
 .pageContent {}
 .push {}/*{height:20em; position:relative; clear:both;}/*
 #footerArea {
-	height:19.5em; 
-	position:relative; 
-	clear:both; 
-	border-right:1px solid #B7B7B7; 
-	border-left:1px solid #B7B7B7; 
-	margin-left:auto; 
+	height:19.5em;
+	position:relative;
+	clear:both;
+	border-right:1px solid #B7B7B7;
+	border-left:1px solid #B7B7B7;
+	margin-left:auto;
 	margin-right:auto;
 }
 
@@ -1209,7 +1209,7 @@ tr.highlight { background:#FFFFE4; }
 
 /*  , .imageHeader, .catalogHeader, .catalogTooltipHeader, .facetOverlayHeader, .overlayPopupHeader  */
 .footerContentContainer h3 {
-	font-family:Georgia, "Times New Roman", Times, serif; 
+	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:1.3em;
 }
 
@@ -1220,9 +1220,9 @@ tr.highlight { background:#FFFFE4; }
 .footerColumn3 {float:right; margin-right:50px; min-height:20.4em; width:175px;}
 .footerColumn4 {float:left; max-width:250px; min-height:19.7em;}
 .footerColumnDivider {
-	float:right; 
-	margin-right:35px; 
-	min-height:19.7em; 
+	float:right;
+	margin-right:35px;
+	min-height:19.7em;
 	background:url(/screens/footerdivider.gif) no-repeat top center;
 }
 .footerContent h3 {font-size:1.55em; font-weight:normal; margin:0 0 .25em 0; padding:0;}
@@ -1238,10 +1238,10 @@ tr.highlight { background:#FFFFE4; }
 
 /* EXTERNAL LINK */
 .external {
-	background:url(/screens/external.png) no-repeat 100% 0px; 
-	display:inline-block; 
-	margin-right:5px; 
-	max-height:30px; 
+	background:url(/screens/external.png) no-repeat 100% 0px;
+	display:inline-block;
+	margin-right:5px;
+	max-height:30px;
 	padding-right:20px;
 }
 .external:hover {background-position:100% -30px;}
@@ -1251,7 +1251,9 @@ a.iconText.external {padding-right:20px;}
 #copyright {border-top:1px solid #b7b7b7; clear:both; margin:0 1em; padding-bottom:1em;}
 #copyright img {vertical-align:bottom; padding-bottom:1px;}
 
-
+.mainSearch #search {
+  margin: 20px auto;
+}
 
 /*<!-- Hide WebPAC searchtools in favor of an Encore search -->*/
 /* *******************************************************************
