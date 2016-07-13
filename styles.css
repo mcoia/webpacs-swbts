@@ -1265,3 +1265,8 @@ a.iconText.external {padding-right:20px;}
 
 /* To show a Catalog home link, comment out this line:*/
 /*.contentCategories, #carrotIndicator { display:none; }
+*/
+
+#mainMenu #bannerLogo {
+  display:none;
+}

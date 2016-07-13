@@ -1,11 +1,13 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <!-- Rel 2009B Example Set -->
-<!-- This File Last Changed: May 26th 2011 -->
+<!-- Updated: May 26th 2011 -->
 <head>
 <title>SIERRA WebPAC</title>
 <meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<!--<link rel="stylesheet" type="text/css" href="/screens/stylesmain.css" > Un-comment to offer a larger logo on mainmenu.-->
 <script type="text/javascript">/* <![CDATA[ */
 function iiiSearchValidate() {
 	try{
@@ -28,54 +30,83 @@ obj.submit();
 }
 /* ]]> */
 </script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="mainMenu">
 <!--{toplogo}-->
-<div class="pageContentInner mainSearch">
 
-<h1 class="accessibleAddInfo">Search</h1>
+<div class="pageContentInner mainSearch container">
+  <h1 class="accessibleAddInfo">Search</h1>
+  <div class="row row-offcanvas row-offcanvas-right">
+    <div class="col-xs-12 col-sm-9">
+      <img class="img-responsive center-block" src="/screens/swbts_logo.jpg" alt="Soutwestern Baptist Theological Seminary logo">
+        <form class="form-horizontal" action="/search/" method="get" name="search" id="search">
 
-<div id="accessibleForm" class="form1Part">
-<div class="browseSearchtool">
-<form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
-<input type="hidden" id="iiiFormHandle_1">
-
-<!-- Optional legend:
-<fieldset>
-<legend>Type the search term you want to find.</legend>-->
-<div class="formEntryArea">
-<label for="searchtype" class="accessibleAddInfo">Search type</label>
-<select name="searchtype" id="searchtype">
-<option value="X" selected="selected">Keyword</option>
-<option value="t">Title</option>
-<option value="s">Journal Title</option>
-<option value="a">Author</option>
-<option value="d">Subject</option>
-<option value="y">Resource Name</option>
-</select>
-<!--{nosort}-->
-<label for="searcharg" class="accessibleAddInfo">Search term</label>
-<input maxlength="75" name="searcharg" size="20" >
-<label for="scope" class="accessibleAddInfo">Location</label>
-<!--{scope}-->
-<span class="nowrap formButtonArea">
-
-  <!--{submit}-->
-
-<input type="hidden" id="iiiFormHandle_1"/>
-<a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
-
-<input type="submit" class="submitHidden">
-
-</span>
-</div><!-- formEntryArea -->
-<!--</fieldset> optional-->
-</form>
-</div><!-- browseSearchtool -->
-</div><!-- form1Part -->
-
+					<div class="form-group">
+						<label for="searchtype" class="col-sm-3 control-label">Search type</label>
+						<div class="col-sm-9">
+							<select name="searchtype" id="searchtype" class="form-control">
+								<option value="X" selected="selected">Keyword</option>
+								<option value="t">Title</option>
+								<option value="s">Journal Title</option>
+								<option value="a">Author</option>
+								<option value="d">Subject</option>
+								<option value="r">Course Reserves</option>
+								<option value="y">Resource Name</option>
+							</select>
+						</div>
+					</div>
+					<input type="hidden" name="SORT" id="SORT" value="D" class="form-control">
+					<div class="form-group">
+	          <label for="searcharg" class="col-sm-3 control-label">Search term</label>
+						<div class="col-sm-9">
+	          	<input type="search" placeholder="Search text" name="searcharg" class="form-control" autofocus required>
+						</div>
+					</div>
+					<div class="form-group">
+	          <label for="searchscope" class="col-sm-3 control-label">Location</label>
+						<div class="col-sm-9">
+							<select name="searchscope" id="searchscope" class="form-control">
+								<option value="1" selected="selected"> View Entire Collection</option>
+								<option value="2"> SWBTS Horner House Library</option>
+								<option value="3"> SWBTS Bowld Music Library</option>
+								<option value="4"> SWBTS Walsh Counseling Center Library</option>
+								<option value="5"> SWBTS Electronic Resources</option>
+								<option value="6"> SWBTS Houston Library</option>
+								<option value="7"> SWBTS Little Rock Library</option>
+								<option value="8"> SWBTS World Mission Center Library</option>
+								<option value="9"> SWBTS Roberts Library</option>
+								<option value="10"> SWBTS San Antonio Library</option>
+							</select>
+						</div>
+					</div>
+	        	<button type="submit" class="btn btn-primary btn-block">Submit</button>
+				</form>
+			</div>
+		  <div class="col-xs-12 col-sm-3 sidebar-offcanvas" id="sidebar">
+		    <div class="list-group">
+		      <a class="list-group-item active" href="#">Main Search Page</a>
+		      <a class="list-group-item" href="/search/X">Advanced Search</a>
+		      <a class="list-group-item" href="/search/t">Title</a>
+		      <a class="list-group-item" href="/search/a">Author</a>
+		      <a class="list-group-item" href="/search/d">Subject (LC)</a>
+		      <a class="list-group-item" href="/search/m">Subject (Children's)</a>
+					<a class="list-group-item" href="/search/r">Course Reserves</a>
+		      <a class="list-group-item" href="/search/s">Journal Title</a>
+		      <a class="list-group-item" href="/search/e">Dewey Call Number</a>
+		      <a class="list-group-item" href="/search/f">Local Call Number</a>
+		      <a class="list-group-item" href="/search/i">ISBN/ISSN</a>
+		      <a class="list-group-item" href="/search/o">OCLC Number</a>
+		      <a class="list-group-item" href="/search/q">Author and Title</a>
+		    </div>
+	  </div><!--/.sidebar-offcanvas-->
+	</div>
+</div>
+<!-- Insert page content here or activate default links as needed. -->
+<!--
 <div class="mainMenuContent">
-<div class="navigationRow"
+<div class="navigationRow">
 <ul>
 <li><a href="/patroninfo"><span class="button"><img src="/screens/ico_patron.gif" alt=""><span class="buttonText">My Account</span></span></a></li>
 <li><a href="/illb"><span class="button"><img src="/screens/ico_books.gif" alt=""><span class="buttonText">Interlibrary Loan</span></span></a></li>
@@ -84,15 +115,11 @@ obj.submit();
 </ul>
 </div>
 </div>
+-->
 <div style="clear:both"></div>
 
-</div><!--pageContentInner -->
+</div><!-- end container -->
 
 <!--{botlogo}-->
-<script type="text/javascript"><!--//--><![CDATA[//><!--
-try { document.forms[1].searcharg.focus(); }
-catch(err) {}
-//--><!]]></script>
-
 </body>
 </html>
