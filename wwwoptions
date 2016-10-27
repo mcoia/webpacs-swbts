@@ -265,7 +265,7 @@ ICON_BUT_REQUEST_RESET=<div onmousedown="this.className='pressedState';" onmouse
 ICON_BUT_REQUEST_SELECTED=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Request Selected</span></span></div></div>
 ICON_REQUEST=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Request
 #REQFILLTIME=14|<br>Request available in approximately %d days|<br>Current estimated availability: approximately %d days|<br>This material may be immediately available
-REQUEST=Hold this item|bib|ask|Y
+REQUEST=Hold this item|system|ask|Y
 REQUEST_ARTICLE_IFCHKIN=Y
 #REQUEST_INSTRUCTION=Please enter any special instructions:
 REQUEST_MULTI=Request All Items in Book Cart|bib|ask
@@ -280,7 +280,7 @@ ICON_BUT_PAT_CANCELMARK=<div onmousedown="this.className='pressedState';" onmous
 #ICON_BUT_PAT_HOLDS=
 ICON_BUT_PAT_INFO=<span class="button"><img src="/screens/ico_patron.gif" alt=""><span class="buttonText">Modify Personal Information</span></span>
 ICON_BUT_PAT_MSGS=<span class="button"><img src="/screens/ico_browse_brief.gif" alt=""><span class="buttonText">Message from the library</span></span>
-ICON_BUT_PAT_PIN=<span class="button"><img src="/screens/ico_pin.gif" alt=""><span class="buttonText">Modify PIN</span></span>
+#ICON_BUT_PAT_PIN=<span class="button"><img src="/screens/ico_pin.gif" alt=""><span class="buttonText">Modify PIN</span></span>
 ICON_BUT_PAT_RENEWALL=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Renew All</span></span></div></div>
 ICON_BUT_PAT_RENEWMARK=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Renew Marked</span></span></div></div>
 ICON_BUT_PAT_SORTBYCHKOUT=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Sort by Checkout</span></span></div></div>
@@ -296,21 +296,21 @@ ICON_CONFIRM_YES=<div onmousedown="this.className='pressedState';" onmouseout="t
 ICON_CONFIRM_NO=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">No</span></span></div></div>
 ICON_PAT_CANCELALL=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancel All</span></span></div></div>
 ICON_PAT_CANCELMARK=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancel Selected</span></span></div></div>
-ICON_PIN_RESET=<span class="button"><img src="/screens/ico_questionmark.gif" alt=""><span class="buttonText">Forget Your PIN?</span></span>
+#ICON_PIN_RESET=<span class="button"><img src="/screens/ico_questionmark.gif" alt=""><span class="buttonText">Forget Your PIN?</span></span>
 ICON_SORTPUDATE=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Sort by Pickup</span></span></div></div>
 ICON_SORTREQDATE=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Sort by Request</span></span></div></div>
-MIN_PIN_LENGTH=6
+#MIN_PIN_LENGTH=6
 MODIFY_PFLDS=z
 #MODIFY_PFLDS=ahtpzHx
 MY_WEBPAC=false,2,0-255
-NEWPIN_MSG=Please enter a Personal Identification Number (PIN)
+#NEWPIN_MSG=Please enter a Personal Identification Number (PIN)
 PATRON_FIELDS=n/a|a/a|t/a|F/43
 #Note that in the PATRON_MSG web option you should replace z with the field tag used on your system for messages.
 #PATRON_MSG=z|Message from the library
 #PATRON_NOTICES=apz
-PIN_ALPHA_NUM=true
-PIN_NUM_ONLY=false
-PIN_RESET=true
+#PIN_ALPHA_NUM=true
+#PIN_NUM_ONLY=false
+#PIN_RESET=true
 #PIN_RESET_EMAIL=Request to reset your library PIN|INSERT LIBRARY FROM EMAIL HERE|INSERT LIBRARY REPLY-TO EMAIL HERE
 PSTARTOVER=/search
 SEEPUDATE=true
@@ -390,6 +390,8 @@ ILL_HOME=/screens/ill.html
 
 # INN-Reach
 IR_PLACEMENT=1
+ICON_INNREACH_ENCORE=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span></span>
+INNREACH_ENCORE=http://searchmobius.org/iii/encore/search/C__S%s__Orightresult__U?lang=eng&suite=cobalt
 
 # Media Management
 ICON_BUT_RET2CRS=<span class="button"><img src="/screens/ico_back.gif" alt=""><span class="buttonText">Return to Course</span></span>
@@ -416,11 +418,11 @@ BIBIMAGE_TEXT=Book Cover
 BUT_ENCYCPD=/screens/encycpd.gif
 BUT_FULL_TEXT=/screens/full_text.gif
 #WEBADDRESS=|I|http://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;ItemKey=%s&amp;Options=N||<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">More Information</span></span>|-1
-WEBADDRESS=http://www.amazon.com/gp/search/ref=sr_adv_b/?search-alias=stripbooks&amp;field-keywords=%s|I|http://www.amazon.com/gp/search/ref=sr_adv_b/?search-alias=stripbooks&field-isbn=%s|<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">More Information</span></span>|<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">More Information</span></span>|-1
+#WEBADDRESS=http://www.amazon.com/gp/search/ref=sr_adv_b/?search-alias=stripbooks&amp;field-keywords=%s|I|http://www.amazon.com/gp/search/ref=sr_adv_b/?search-alias=stripbooks&field-isbn=%s|<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">More Information</span></span>|<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">More Information</span></span>|-1
 
 # WebBridge/Pathfinder Pro
 ICON_BUT_CLOSEFRAME=<span class="button"><img src="/screens/ico_x.gif" alt=""><span class="buttonText">Close Frame</span></span>
-ICON_BUT_RESOURCELINK=<div id="resourcelink"><span class="button"><img src="/screens/ico_globe.gif" alt=""><span class="buttonText">Other Resources</span></span></div>
+#ICON_BUT_RESOURCELINK=<div id="resourcelink"><span class="button"><img src="/screens/ico_globe.gif" alt=""><span class="buttonText">Other Resources</span></span></div>
 ICON_BUT_RET2RESOURCE=<div id="resourcelink"><span class="button"><img src="/screens/ico_back.gif" alt=""><span class="buttonText">Back</span></span></div>
 RESLINK=bibresourcetop|browseresourcetop||
 #WBHEADERTEXT=The following resources may provide additional information about<br>#HEADER#

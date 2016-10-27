@@ -216,7 +216,7 @@ table.bibItems { clear:both; }
 
 .bibRecordLink { padding:8px 0 8px 6px; }
 
-.bibResourceSidebar { background:#FFFFFF url('tile_vgradient.jpg') repeat-x top left; display:inline; float:right; margin-right:10px; width:192px; }
+.bibResourceSidebar { background:#FFFFFF url('tile_vgradient.jpg') repeat-x top left; display:inline; float:right; margin-right:10px; width:192px; text-align:center;}
 
 .bibResourceSidebar .button { margin:1% 3%; }
 
@@ -387,7 +387,7 @@ h2.briefcitTitle { font-size:1.0625em; display:inline; }
 
 .browsePager a:hover { background:#014184; color:#FFFFFF; }
 
-div.browseResourceTable { background:#FFFFFF url('tile_vgradient.jpg') repeat-x top left; border:0; margin:30px 10px 0 12px; padding:0; }
+div.browseResourceTable { background:#FFFFFF url('tile_vgradient.jpg') repeat-x top left; border:0; margin:30px 10px 0 12px; padding:0; display:none; }
 
 .browseResourceTable { padding-top:5px; }
 
