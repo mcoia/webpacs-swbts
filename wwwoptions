@@ -34,7 +34,7 @@
 # WebPAC Pro
 # Research Pro
 # Program Registration
-
+# ArticleReach
 
 # General Display and Behavior
 AVAILLIM=<span class="availLimMessage">Limit search to available items</span>|<span class="availLimMessage">Search results limited to available items</span>
@@ -72,7 +72,7 @@ XSTARTOVER=/search
 # Staff
 ICON_BUT_PUBLIC=<span class="button"><img src="/screens/ico_patron.gif" alt=""><span class="buttonText">Patron View</span></span>
 ICON_BUT_STAFF=<span class="button"><img src="/screens/ico_gear.gif" alt=""><span class="buttonText">Staff View</span></span>
-STAFF=1
+STAFF=12
 STAFF_LOGGEDIN_MSG=<span class="loggedInMessage">You are logged into staff mode at %s as %s</span>
 
 # General and Phrase Searching
@@ -85,7 +85,8 @@ FRAMEURL=0
 IBROWSE_MAX=10000
 KEYWORD_COLOR=Y|all|red
 MULT_LIMITS=true
-NOSEARCH=nubfz
+#NOSEARCH edited by III to add %#, old value nubfz
+NOSEARCH=nubfz%#
 OFFER_HISTORY=true
 
 # Advanced Searching
@@ -131,7 +132,7 @@ ICON_BOOKCART_SAVED=<span class="button"><img src="/screens/ico_bag_minus.gif" a
 ICON_FULLRECORD=See Full Record
 ICON_LOCATEINRESULTS=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Locate in results</span></span></div></div>
 ICON_PAGING_CAPTION=Result Page&nbsp;
-ICON_PAGING_NEXT=Next
+ICON_PAGING_NEXT=Nextf
 ICON_PAGING_PREV=Prev
 ICON_PROGRAM=<img src="/screens/media_program.gif" border="0" alt="Library Event">
 ICON_RESOURCE=<img src="/screens/media_resource.gif" alt="Internet Resource">
@@ -145,22 +146,21 @@ IMAGE_MATTYPEd=/screens/media_printedmusic.png" ALT="music manuscript" title="Mu
 IMAGE_MATTYPEe=/screens/media_map.png" ALT="map" title="Map"><br>Map<img src="/screens/spaceball.gif" class="briefcitMediaEnd
 IMAGE_MATTYPEf=/screens/media_map.png" ALT="map manuscript" title="Map Manuscript"><br>Map Manuscript<img src="/screens/spaceball.gif" class="briefcitMediaEnd
 IMAGE_MATTYPEg=/screens/media_projectedmedia.png" ALT="film" title="Film"><br>Film<img src="/screens/spaceball.gif" class="briefcitMediaEnd
-IMAGE_MATTYPEh=/screens/media_document.png" ALT="electronic document" title="Electronic Document"><br>Electronic Document<img src="/screens/spaceball.gif" class="briefcitMediaEnd
-IMAGE_MATTYPEi=/screens/media_bookoncd.png" ALT="Book on CD" title="Book on CD"><br>Book on CD<img src="/screens/spaceball.gif" class="briefcitMediaEnd
+IMAGE_MATTYPEh=/screens/media_microform.gif" ALT="microform" title="Microform"><br>Microform<img src="/screens/spaceball.gif" class="briefcitMediaEnd
+IMAGE_MATTYPEi=/screens/media_cd.png" ALT="Spoken Audio" title="Spoken Audio"><br>Spoken Audio<img src="/screens/spaceball.gif" class="briefcitMediaEnd
 IMAGE_MATTYPEj=/screens/media_music.png" ALT="Music" title="Music"><br>Music<img src="/screens/spaceball.gif" class="briefcitMediaEnd
 IMAGE_MATTYPEk=/screens/media_image.png" ALT="Photo" title="Photo"><br>Photo<img src="/screens/spaceball.gif" class="briefcitMediaEnd
 IMAGE_MATTYPEl=/screens/media_book.png" ALT="Large Print" title="Large Print"><br>Large Print<img src="/screens/spaceball.gif" class="briefcitMediaEnd
 IMAGE_MATTYPEm=/screens/media_document.png" ALT="Computer File" title="Computer File"><br>Computer File<img src="/screens/spaceball.gif" class="briefcitMediaEnd
-IMAGE_MATTYPEn=/screens/media_news.png" ALT="Newpaper" title="Newpaper"><br>Newpaper<img src="/screens/spaceball.gif" class="briefcitMediaEnd
-IMAGE_MATTYPEq=/screens/media_ebook.png" ALT="ebook" title="ebook"><br>ebook<img src="/screens/spaceball.gif" class="briefcitMediaEnd
+IMAGE_MATTYPEn=/screens/media_news.png" ALT="Newspaper" title="Newspaper"><br>Newspaper<img src="/screens/spaceball.gif" class="briefcitMediaEnd
+IMAGE_MATTYPE2=/screens/media_ebook.png" ALT="ebook" title="ebook"><br>E-book<img src="/screens/spaceball.gif" class="briefcitMediaEnd
 IMAGE_MATTYPEr=/screens/media_puzzle.png" ALT="3D artwork" title="3D artwork"><br>3D artwork<img src="/screens/spaceball.gif" class="briefcitMediaEnd
-IMAGE_MATTYPEs=/screens/media_bookontape.png" ALT="Book on Tape" title="Book on Tape"><br>Book on Tape<img src="/screens/spaceball.gif" class="briefcitMediaEnd
+IMAGE_MATTYPEs=/screens/media_periodical.png" ALT="Journal" title="Journal"><br>Journal<img src="/screens/spaceball.gif" class="briefcitMediaEnd
 IMAGE_MATTYPEt=/screens/media_book.png" ALT="Manuscript" title="Manuscript"><br>Manuscript<img src="/screens/spaceball.gif" class="briefcitMediaEnd
 IMAGE_MATTYPEu=/screens/media_dvd.png" ALT="DVD" title="DVD"><br>DVD<img src="/screens/spaceball.gif" class="briefcitMediaEnd
 IMAGE_MATTYPEv=/screens/media_vhs.png" ALT="VHS" title="VHS"><br>VHS<img src="/screens/spaceball.gif" class="briefcitMediaEnd
 IMAGE_MATTYPEw=/screens/media_periodical.png" ALT="Periodical" title="Periodical"><br>Periodical<img src="/screens/spaceball.gif" class="briefcitMediaEnd
 IMAGE_MATTYPEz=/screens/media_book.png" ALT="Bestseller" title="Bestseller"><br>Bestseller<img src="/screens/spaceball.gif" class="briefcitMediaEnd
-IMAGE_MATTYPE2=/screens/media_document.png" ALT="Article" title="Article"><br>Article<img src="/screens/spaceball.gif" class="briefcitMediaEnd
 INDEX_EXT=coi
 MEDIA=2
 NO_COPIES=Currently no copies available
@@ -408,7 +408,7 @@ TABLEPARAM_RSRV_BIBS=width="100%" border="0" cellpadding="0" cellspacing="0"
 # Featured Lists
 ICON_BUT_PREVSCRN=<span class="button"><img src="/screens/ico_back.gif" alt=""><span class="buttonText">Back</span></span>
 ICON_BUT_RET2FEAT=<span class="button"><img src="/screens/ico_back.gif" alt=""><span class="buttonText">Back</span></span>
-FEATURED_LIST=45,44|FEATURED LISTS|CATEGORY|# of Titles
+FEATURED_LIST=23,24|FEATURED LISTS|CATEGORY|# of Titles
 
 # Content Linking and Other Resources
 # If your system uses SSL, use the https example, to avoid secure/nonsecure warning on Internet Explorer.
@@ -530,6 +530,13 @@ ICON_VIEW_ADDITIONAL_SESSIONS=<span class="button"><span class="buttonText">View
 ICON_HIDE_ADDITIONAL_SESSIONS=<span class="button"><span class="buttonText">Hide Additional Sessions</span></span>
 ICON_PROGRAM_CAL=<span class="button"><img src="/screens/ico_calendar.gif" alt=""><span class="buttonText">Events Calendar</span></span>
 TABLEPARAM_PROG_SECTIONS=width="100%" border="0" cellspacing="0" align="center"
+
+# ArticleReach
+ARTICLEREACH_CENTRALS=arlir.iii.com
+ARTICLEREACH_LABELS=1|2|14|15  
+ICON_ARTICLEREACH=Request Article
+ICON_MYARTICLEREACH=<span class="button"><img src="/screens/media_periodicalsmall.gif" alt=""><span class="buttonText">Article Requests</span></span>
+
 #
 IPSSO_USEHTML=T
 #
@@ -538,3 +545,13 @@ PROXYDNS=swbts.searchmobius.org
 AIRWKST_PORT=8088
 # FOR ENCORE
 #PATFEEDS_MT=10.17.4.35
+#BRIEF_b=q added by III for security reasons
+BRIEF_b=q
+#BRIEF_f=q added by III for security reasons
+BRIEF_f=q
+#BRIEF_n=q added by III for security reasons
+BRIEF_n=q
+#BRIEF_u=q added by III for security reasons
+BRIEF_u=q
+#BRIEF_z=q added by III for security reasons
+BRIEF_z=q

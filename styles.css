@@ -93,6 +93,8 @@ strong .button { display:block; font-weight:normal; margin-top:15px; }
 
 .pageContent p { margin-left:20px; }
 
+.pageContent img { max-width: 500px;}
+
 .pageContentInner p { margin-left:0px; }
 
 /* end status message area */
@@ -764,7 +766,7 @@ div .bibResourceSidebar { display:none; }
 
 .patFloat .button img { margin-top:3px; }
 
-.patFloat .buttonText { margin-left:3px; }
+.patFloat .buttonText { margin-left:3px; font-size:.8824em;}
 
 .patFuncArea { background:#FFFFFF; float:left; margin-left:20px; width:60%; margin-bottom:18px; }
 
